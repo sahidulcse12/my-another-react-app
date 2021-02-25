@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         {
-          nayoks.map(nayok => <Nayok name={nayok.name} address={nayok.address}></Nayok>)
+          nayoks.map(nayok => <Nayok name={nayok.name} key={nayok.id} address={nayok.address}></Nayok>)
         }
 
       </header>
